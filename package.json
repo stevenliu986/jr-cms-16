@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "pm2 start src/index.js --name jrCMS16",
+    "poststart": "pm2 log jrCMS16",
+    "stop": "pm2 stop jrCMS16",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
@@ -20,6 +23,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.5",
     "morgan": "^1.10.0",
+    "pm2": "^5.2.0",
     "winston": "^3.7.2"
   },
   "devDependencies": {
