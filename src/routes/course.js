@@ -5,7 +5,7 @@ const {
   updateCourseById,
   deleteCourseById,
   addCourse,
-} = require('../controllers/Course');
+} = require('../controllers/course');
 
 const courseRouter = express.Router();
 
